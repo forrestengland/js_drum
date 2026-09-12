@@ -1,0 +1,23 @@
+.drum-step {
+    cursor: pointer;
+}
+
+.current-step {
+    color: #a00;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('ConsolaMono-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+    font-family: 'MyCustomFont', monospace;
+}
+
+.drum-control {
+    cursor: pointer;
+}
