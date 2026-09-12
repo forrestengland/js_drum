@@ -1,3 +1,3 @@
 # js_drum
-drum machine in the browser
-<img width="903" height="611" alt="todo" src="https://github.com/user-attachments/assets/f3f1f355-8662-47d1-b637-66499eb94d7c" />
+<img width="950" height="584" alt="js-drum-screen" src="https://github.com/user-attachments/assets/12f5ef34-1235-40d7-ab11-ae48835e34bd" />
+
