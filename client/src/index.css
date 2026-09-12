@@ -1,11 +1,3 @@
-.drum-step {
-    cursor: pointer;
-}
-
-.current-step {
-    color: #a00;
-}
-
 @font-face {
   font-family: 'MyCustomFont';
   src: url('ConsolaMono-Book.ttf') format('truetype');
@@ -18,6 +10,49 @@ body {
     font-family: 'MyCustomFont', monospace;
 }
 
-.drum-control {
+.drum-machine {
+    border: 1px solid #000;
+}
+
+.drum-machine-title {
+    background-color: #000;
+    color: #fff;
+    padding-left: 0.5em;
+    padding-bottom: 0.1em;
+}
+
+.drum-step {
     cursor: pointer;
 }
+
+.current-step {
+    color: #a00;
+}
+
+.drum-machine-controls {
+    display: flex;
+    gap: 0px;
+}
+
+.drum-control {
+    cursor: pointer;
+/*    border: 1px solid black; */
+}
+
+.drum-machine-icon {
+}
+
+input {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    appearance: none;
+    border: 1px solid black;
+}
+
+input::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+

@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { Play, Pause } from 'lucide-react';
 
 function SequencerTrack({ trackNum, seq, setSeq, currentStep }) {
 
@@ -255,13 +256,17 @@ export default function MyDrumMachine() {
     }
 
     return (
-	<div>
-	    Drum Machine<span className="drum-control" onClick={playClicked}>[&gt;]</span><span className="drum-control" onClick={stopClicked}>[||]</span>
+	<div className="drum-machine">
+	    <div className="drum-machine-title">Drum Machine</div>
+	    <div className="drum-machine-controls">
+		<div className="drum-control" onClick={playClicked}><Play className="drum-machine-icon" size="30" /></div>
+		<div className="drum-control" onClick={stopClicked}><Pause className="drum-machine-icon" size="30" /></div>
+	    </div>
 	    <div>
 		<input type="range" onChange={(e) => setDecay(e.currentTarget.value)}/>
-		<input type="range" onChange={(e) => setPitch(e.currentTarget.value)}/>			
-		<SequencerTrack trackNum="0" seq={seq} setSeq={setSeq} currentStep={currentStep}/>
+		<input type="range" onChange={(e) => setPitch(e.currentTarget.value)}/>
 		<input type="range" onChange={(e) => setNoiseDecay1(e.currentTarget.value)}/>						
+		<SequencerTrack trackNum="0" seq={seq} setSeq={setSeq} currentStep={currentStep}/>
 		<SequencerTrack trackNum="0" seq={seq2} setSeq={setSeq2} currentStep={currentStep2}/>
 	    </div>
 	</div>
