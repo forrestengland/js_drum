@@ -56,3 +56,11 @@ input::-webkit-slider-thumb {
     border: 1px solid black;
 }
 
+.drum-control-container-container {
+    display: flex;
+}
+
+.drum-control-container {
+    border: 1px solid black;
+    padding: 10px;
+}

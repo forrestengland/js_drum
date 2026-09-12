@@ -263,9 +263,15 @@ export default function MyDrumMachine() {
 		<div className="drum-control" onClick={stopClicked}><Pause className="drum-machine-icon" size="30" /></div>
 	    </div>
 	    <div>
-		<input type="range" onChange={(e) => setDecay(e.currentTarget.value)}/>
-		<input type="range" onChange={(e) => setPitch(e.currentTarget.value)}/>
-		<input type="range" onChange={(e) => setNoiseDecay1(e.currentTarget.value)}/>						
+		<div className="drum-control-container-container">
+		    <div className="drum-control-container">
+			<input type="range" onChange={(e) => setDecay(e.currentTarget.value)}/>
+			<input type="range" onChange={(e) => setPitch(e.currentTarget.value)}/>
+		    </div>
+		    <div className="drum-control-container">
+			<input type="range" onChange={(e) => setNoiseDecay1(e.currentTarget.value)}/>
+		    </div>
+		</div>
 		<SequencerTrack trackNum="0" seq={seq} setSeq={setSeq} currentStep={currentStep}/>
 		<SequencerTrack trackNum="0" seq={seq2} setSeq={setSeq2} currentStep={currentStep2}/>
 	    </div>
